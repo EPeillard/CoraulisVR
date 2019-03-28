@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.coraulis.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\eleve\\Documents\\P2RV\\P2RV\\Scene Unity\\Coraulis\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Coraulis [Testing]"
+        }
+      }
+    }
+  ]
+}
