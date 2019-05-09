@@ -3,6 +3,7 @@
 	Properties
 	{
 		_MainTex("Texture", 2D) = "white" {}
+		_Pos("Position", Vector) = (0,0,0,1)
 	}
 		SubShader
 	{
@@ -35,14 +36,22 @@
 
 	sampler2D _MainTex;
 	float4 _MainTex_ST;
+	float4 _Pos;
 
 	v2f vert(appdata v)
 	{
 		v2f o;
 		o.vertex = UnityObjectToClipPos(v.vertex);
 		// Compute worldspace direction from the camera to this vertex.
-		o.direction = mul(unity_ObjectToWorld, v.vertex).xyz
-			- _WorldSpaceCameraPos;
+		if (_Pos.w == 1) {
+			o.direction = mul(unity_ObjectToWorld, v.vertex).xyz
+				- _WorldSpaceCameraPos;
+		}
+		else
+		{
+			o.direction = mul(unity_ObjectToWorld, v.vertex).xyz
+				- _Pos.xyz;
+		}
 		return o;
 	}
 
