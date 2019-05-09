@@ -10,6 +10,8 @@ public class CoraulisCommander : MonoBehaviour
     public GameObject partieMobile;
     public List<GameObject> screens;
     public Vector3 projRef;
+    public GameObject maquetteBlanche;
+    public GameObject maquetteCouleur;
 
     bool started = true;
     Animation anim;
@@ -54,12 +56,14 @@ public class CoraulisCommander : MonoBehaviour
 
     private IEnumerator SwitchOnOff()
     {
-        if(started)
+        if(started) //Turn off
         {
             foreach (GameObject s in screens)
             {
                 s.GetComponent<MeshRenderer>().material = plain;
             }
+            maquetteBlanche.SetActive(true);
+            maquetteCouleur.SetActive(false);
             foreach (AnimationState state in anim)
             {
                 state.speed = -1;
@@ -71,7 +75,7 @@ public class CoraulisCommander : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
-        else
+        else //Turn on
         {
             foreach (AnimationState state in anim)
             {
@@ -86,6 +90,8 @@ public class CoraulisCommander : MonoBehaviour
             {
                 s.GetComponent<MeshRenderer>().material = proj;
             }
+            maquetteBlanche.SetActive(false);
+            maquetteCouleur.SetActive(true);
         }
         started = !started;
     }
