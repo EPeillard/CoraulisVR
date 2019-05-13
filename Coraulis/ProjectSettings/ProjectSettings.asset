@@ -598,7 +598,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -619,10 +619,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 5ae7a533-0fc7-4a77-8a54-a68265978d68
+  cloudProjectId: 03732fe8-0621-46af-905f-16c7e5fc073c
   framebufferDepthMemorylessMode: 0
   projectName: Coraulis
-  organizationId: a_s_l_m
+  organizationId: etiennepei
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
