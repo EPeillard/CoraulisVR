@@ -24,6 +24,11 @@ public class CoraulisCommander : MonoBehaviour
         StartCoroutine("SwitchOnOff");
     }
 
+    public void SwitchCoraulis()
+    {
+        StartCoroutine("SwitchOnOff");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +42,7 @@ public class CoraulisCommander : MonoBehaviour
         }
     }
 
-    private void SwitchProjection()
+    public void SwitchProjection()
     {
         modeImmersion = !modeImmersion;
         if(modeImmersion)
