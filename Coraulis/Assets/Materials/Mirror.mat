@@ -10,7 +10,7 @@ Material:
   m_Name: Mirror
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
-  m_LightmapFlags: 2
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -64,7 +64,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 1
     - _GlossyReflections: 1
-    - _Metallic: 0.52
+    - _Metallic: 0.5
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -74,5 +74,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.29803923}
-    - _EmissionColor: {r: 0.12775901, g: 0.13786708, b: 0.31132078, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.101960786}
+    - _EmissionColor: {r: 0.22465496, g: 0.23067251, b: 0.343, a: 1}
