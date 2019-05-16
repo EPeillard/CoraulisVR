@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3767839513995190984}
   - component: {fileID: 4122513969927143574}
-  - component: {fileID: 8307292971725834546}
+  - component: {fileID: 2621653332991177559}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -161,7 +161,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &8307292971725834546
+--- !u!114 &2621653332991177559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
